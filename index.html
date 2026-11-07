@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>American Dentistry — Cosmetic Dentist, Queens NY</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A2A4A;--teal:#0FB5BA;--bg:#F8FBFD;--card:#fff;--ink:#12263A;--soft:#E7F4F8;--gold:#E3B77A;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1b26;--card:#14293a;--ink:#e6eef3;--soft:#183247;--navy:#9fd0e8}}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 92% 0%,rgba(23,195,192,.12),transparent 35%),radial-gradient(circle at 0% 45%,rgba(227,183,122,.14),transparent 30%),var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;cursor:none}
+a,button,summary{cursor:none}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;color:var(--navy);line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.3rem,6vw,4.2rem)}h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:80px 0}
+.tag{color:var(--teal);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+nav{position:fixed;inset:0 0 auto;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);padding-top:env(safe-area-inset-top,0px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+nav b{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--navy)}
+nav .links{display:flex;gap:22px;align-items:center}
+nav a{color:var(--ink);text-decoration:none;font-size:.92rem}
+.btn{display:inline-block;background:linear-gradient(135deg,#17c3c0,#1c7ed6);box-shadow:0 6px 16px rgba(23,150,200,.32);color:#fff!important;padding:13px 26px;border-radius:999px;font-weight:600;text-decoration:none;border:0;font:inherit;transition:.25s}
+.btn:hover{filter:brightness(1.1);transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,166,160,.4)}
+.btn.ghost{background:transparent;border:1.5px solid #fff}
+.track{height:340vh;position:relative}
+.hero{position:sticky;top:0;height:100vh;display:flex;align-items:center;color:#fff;overflow:hidden;background:linear-gradient(120deg,#04152a,#0A2A4A 45%,#0E7C9B);background-size:200% 200%;animation:bg 14s ease infinite}
+@keyframes bg{50%{background-position:100% 50%}}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,30,48,.8),rgba(8,30,48,.2));opacity:var(--ov,1)}
+.stage{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden}
+.stage svg{grid-area:1/1;width:min(85vh,100vw);height:auto;will-change:transform,opacity}
+#tools{opacity:0}
+.mid{position:absolute;inset:0;display:grid;place-items:center;z-index:3;color:#fff;text-align:center;opacity:0;pointer-events:none;font:700 clamp(1.8rem,5vw,3.4rem)/1.2 'Playfair Display',serif;padding:20px}
+.hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:3;color:#fff;font-size:.8rem;letter-spacing:.25em;animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{50%{margin-bottom:-8px}}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{color:#fff}.hero em{color:var(--gold)}
+.hero p{max-width:560px;font-size:1.15rem;opacity:.92}
+.hero .btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:var(--card);border-radius:18px;padding:28px;box-shadow:0 6px 24px rgba(18,59,93,.08);transition:.3s}
+.card{border:1px solid rgba(15,181,186,.16);border-top:3px solid var(--teal);background:linear-gradient(180deg,var(--card),color-mix(in srgb,var(--soft) 60%,var(--card)))}
+h2{background:linear-gradient(90deg,var(--navy),#1c7ed6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.dk{background:linear-gradient(135deg,#0A2A4A,#0E6A94);color:#e6f3f8}
+.dk h2{background:none;color:#fff;-webkit-text-fill-color:#fff}
+.dk h3{color:#fff}
+.dk .card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);border-top-color:var(--gold)}
+.card:hover{transform:translateY(-8px);box-shadow:0 16px 36px rgba(11,34,57,.15)}
+.bgglow{position:absolute;inset:-20%;background:radial-gradient(circle at 50% 45%,rgba(23,195,192,.45),transparent 55%),radial-gradient(circle at 80% 10%,rgba(227,183,122,.28),transparent 40%);will-change:transform}
+.flash{position:absolute;inset:0;background:radial-gradient(circle,#fff,#bff3ee 60%,transparent);opacity:0;pointer-events:none;z-index:2}
+.sp{position:absolute;width:4px;height:4px;border-radius:50%;background:#fff;box-shadow:0 0 8px #fff;opacity:0}
+.tl{transform-box:fill-box;transform-origin:center}
+.clinic{position:absolute;inset:0;overflow:hidden}
+.clinic svg{width:100%;height:100%;display:block}
+.pan{animation:pan 26s ease-in-out infinite alternate;transform-origin:800px 450px}
+@keyframes pan{from{transform:scale(1.02) translateX(0)}to{transform:scale(1.12) translateX(-30px)}}
+.nod{animation:nod 3.2s ease-in-out infinite;transform-origin:300px 480px}
+@keyframes nod{50%{transform:translateY(4px) rotate(1.5deg)}}
+.arm{animation:arm 3s ease-in-out infinite}.arm2{animation:arm 4s ease-in-out infinite reverse}
+@keyframes arm{50%{transform:rotate(-5deg)}}
+.lamp{animation:lamp 6s ease-in-out infinite}
+@keyframes lamp{50%{transform:rotate(2.5deg)}}
+.ray{animation:ray 7s ease-in-out infinite}
+@keyframes ray{50%{opacity:.45}}
+.scr{animation:scr 2.4s ease-in-out infinite}
+@keyframes scr{50%{opacity:.55}}
+.dust circle{animation:dust 9s linear infinite}
+@keyframes dust{from{transform:translateY(0);opacity:0}20%{opacity:.8}to{transform:translateY(-140px);opacity:0}}
+.endcta{position:absolute;bottom:12%;left:0;right:0;text-align:center;z-index:4;opacity:0;pointer-events:none}
+.bar{position:absolute;left:0;bottom:0;height:3px;width:0;background:linear-gradient(90deg,var(--teal),var(--gold));z-index:5}
+.card i{font-style:normal;font-size:1.8rem}
+.alt{background:linear-gradient(180deg,var(--soft),var(--bg))}
+.tag:before{content:"";display:inline-block;width:28px;height:2px;background:var(--gold);vertical-align:middle;margin-right:10px}
+.ba{position:relative;aspect-ratio:4/3;border-radius:18px;overflow:hidden;user-select:none;touch-action:none;box-shadow:0 6px 24px rgba(18,59,93,.15)}
+.ba .l{position:absolute;inset:0;background:center/cover}
+.ba .b{background-color:#b9a58f;background-image:linear-gradient(135deg,#c8b8a0,#9b8870)}
+.ba .a{background-color:#eaf4f7;background-image:linear-gradient(135deg,#fff,#cfe6ee);clip-path:inset(0 0 0 50%)}
+.ba span{position:absolute;top:12px;padding:4px 12px;border-radius:99px;background:rgba(0,0,0,.55);color:#fff;font-size:.75rem;z-index:3}
+.ba .h{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;z-index:4}
+.ba .h:after{content:"↔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+details{background:var(--card);border-radius:14px;padding:18px 22px;margin-bottom:12px;box-shadow:0 3px 14px rgba(18,59,93,.06)}
+summary{font-weight:600;color:var(--navy)}
+form{display:grid;gap:12px}
+input,select,textarea{padding:13px 15px;border:1px solid #c5d3dc;border-radius:12px;font:inherit;background:var(--card);color:var(--ink);width:100%}
+footer{background:linear-gradient(180deg,#0A2A4A,#04152a);color:#cfe0ea;padding:56px 0 24px;font-size:.92rem}
+footer a{color:#cfe0ea;text-decoration:none;transition:.2s}
+footer a:hover{color:var(--gold)}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:32px}
+.fg h4{font-family:'Playfair Display',serif;color:#fff;font-size:1.1rem;margin:0 0 14px}
+.fg ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fg p{margin:0 0 10px}
+.copy{border-top:1px solid rgba(255,255,255,.15);margin-top:36px;padding-top:20px;text-align:center}
+@media(max-width:800px){.fg{grid-template-columns:1fr 1fr}}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.cur,.ring{position:fixed;top:0;left:0;pointer-events:none;z-index:999;border-radius:50%;transform:translate(-50%,-50%)}
+.cur{width:8px;height:8px;background:var(--teal)}
+.ring{width:36px;height:36px;border:1.5px solid var(--teal);transition:width .2s,height .2s,background .2s}
+.ring.big{width:64px;height:64px;background:rgba(31,166,160,.15)}
+.rv{opacity:0;transform:translateY(34px);transition:.8s}.rv.in{opacity:1;transform:none}
+@media(hover:none){body,a,button,summary{cursor:auto}.cur,.ring{display:none}}
+nav .links a:not(.btn){position:relative;padding:4px 0;transition:color .25s}
+nav .links a:not(.btn):after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:100%;background:linear-gradient(90deg,var(--teal),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav .links a:not(.btn):hover{color:var(--teal)}
+nav .links a:not(.btn):hover:after{transform:scaleX(1)}
+.burger{display:none;width:44px;height:44px;border:0;background:none;padding:10px;flex-direction:column;justify-content:center;gap:6px}
+.burger span{display:block;height:2px;background:var(--navy);border-radius:2px;transition:.3s}
+.burger:hover span{background:var(--teal)}
+.burger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.btn[href*="wa.me"]:hover{background:linear-gradient(135deg,#25D366,#128C7E);box-shadow:0 10px 24px rgba(37,211,102,.45)}
+.wa{transition:.25s}
+.wa:hover{background:#128C7E;transform:scale(1.12) rotate(-8deg);box-shadow:0 0 0 8px rgba(37,211,102,.25),0 8px 22px rgba(0,0,0,.35)}
+@media(max-width:700px){.burger{display:flex}.links{position:absolute;top:100%;left:0;right:0;display:none!important;flex-direction:column;align-items:flex-start!important;gap:18px!important;background:var(--bg);padding:20px;box-shadow:0 14px 30px rgba(11,34,57,.15)}.links.open{display:flex!important}}
+</style>
+</head>
+<body>
+<div class="cur"></div><div class="ring"></div>
+<nav><div class="wrap"><b>American Dentistry</b><button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button><div class="links"><a href="#services">Services</a><a href="#results">Results</a><a href="#contact">Contact</a><a href="#faq">FAQs</a><a class="btn" href="https://wa.me/19297574718" target="_blank" rel="noopener">WhatsApp Us</a></div></div></nav>
+
+<div class="track" id="home"><header class="hero">
+<!-- Add your video: set src="your-video.mp4" -->
+<video autoplay muted loop playsinline preload="metadata"></video>
+<div class='clinic'><svg viewBox='0 0 1600 900' preserveAspectRatio='xMidYMid slice'><defs><linearGradient id='wl' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#f4fbfc'/><stop offset='1' stop-color='#cfe6ee'/></linearGradient><linearGradient id='fl' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#bcd6df'/><stop offset='1' stop-color='#8fb4c2'/></linearGradient><linearGradient id='sk' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#8fd8ee'/><stop offset='1' stop-color='#e9f9fd'/></linearGradient><linearGradient id='rayg' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fff' stop-opacity='.7'/><stop offset='1' stop-color='#fff' stop-opacity='0'/></linearGradient><radialGradient id='lg'><stop offset='0' stop-color='#fff8dc' stop-opacity='.9'/><stop offset='1' stop-color='#fff8dc' stop-opacity='0'/></radialGradient></defs><g class='pan'>
+<rect width='1600' height='680' fill='url(#wl)'/><rect y='640' width='1600' height='260' fill='url(#fl)'/><rect y='632' width='1600' height='14' fill='#fff' opacity='.7'/>
+<rect x='560' y='110' width='300' height='320' rx='8' fill='#fff'/><rect x='574' y='124' width='272' height='292' fill='url(#sk)'/><path d='M710 124V416M574 270H846' stroke='#fff' stroke-width='8'/><polygon class='ray' points='580,140 840,140 1180,700 640,700' fill='url(#rayg)'/>
+<rect x='140' width='320' height='22' rx='8' fill='#fff'/><rect x='1000' width='320' height='22' rx='8' fill='#fff'/>
+<circle cx='300' cy='290' r='62' fill='#fff' stroke='#0FB5BA' stroke-width='6'/><path d='M270 285c0-24 60-24 60 0v10c0 30-14 42-30 52c-16-10-30-22-30-52z' fill='#0FB5BA'/>
+<path d='M240 560C240 500 270 480 300 480C330 480 360 500 360 560Z' fill='#0A2A4A'/><g class='nod'><circle cx='300' cy='440' r='34' fill='#e8b894'/><path d='M264 438C262 400 338 400 336 438C326 420 274 420 264 438Z' fill='#3b2a22'/><circle cx='290' cy='440' r='2.5' fill='#3b2a22'/><circle cx='310' cy='440' r='2.5' fill='#3b2a22'/><path d='M287 452q13 12 26 0' stroke='#7a3b2e' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M262 440C262 405 338 405 338 440' fill='none' stroke='#0FB5BA' stroke-width='4'/></g>
+<rect x='90' y='560' width='440' height='100' fill='#fff'/><rect x='90' y='548' width='440' height='16' rx='6' fill='#E3B77A'/><rect x='90' y='604' width='440' height='10' fill='#0FB5BA'/><rect x='400' y='470' width='90' height='62' rx='6' fill='#0A2A4A'/><rect class='scr' x='408' y='478' width='74' height='46' fill='#7fe0e0'/><rect x='438' y='532' width='14' height='16' fill='#0A2A4A'/>
+<rect x='548' y='570' width='36' height='70' rx='6' fill='#fff'/><path d='M566 570C520 520 530 470 566 450C560 500 600 520 566 570ZM566 570C610 520 620 480 590 450C586 500 540 520 566 570Z' fill='#34b38a'/>
+<rect x='1180' y='180' width='170' height='110' rx='8' fill='#0A2A4A'/><rect x='1190' y='190' width='150' height='90' fill='#0b4663'/><path class='scr' d='M1240 215C1250 205 1262 212 1265 215C1268 212 1280 205 1290 215C1300 230 1292 260 1285 272C1280 280 1276 262 1265 262C1254 262 1250 280 1245 272C1238 260 1230 230 1240 215Z' fill='#9ff0ea'/>
+<ellipse cx='1130' cy='652' rx='170' ry='16' fill='#0A2A4A' opacity='.18'/><rect x='1120' y='560' width='20' height='90' fill='#9fb8c4'/><rect x='1060' y='640' width='140' height='14' rx='7' fill='#7f9cab'/>
+<g transform='rotate(-12 1000 520)'><rect x='930' y='500' width='260' height='52' rx='24' fill='#0FB5BA'/><rect x='950' y='466' width='220' height='40' rx='20' fill='#cdd9f2'/><circle cx='950' cy='480' r='34' fill='#c98b62'/><path d='M918 470C920 442 980 442 982 470C968 458 934 458 918 470Z' fill='#2b1c16'/><path d='M960 492q10 10 20 0' stroke='#7a3b2e' stroke-width='3' fill='none' stroke-linecap='round'/></g>
+<path d='M900 600H960V642H900Z' fill='#0A2A4A'/><path d='M876 440C876 408 984 408 984 440L994 610H866Z' fill='#fff' stroke='#cfe2ea' stroke-width='2'/><path d='M912 418L930 470L948 418' fill='#0FB5BA'/><circle cx='930' cy='360' r='34' fill='#e8b894'/><path d='M894 352C896 318 964 318 966 352Z' fill='#1c7ed6'/><path d='M898 362C915 380 945 380 962 362L962 378C945 396 915 396 898 378Z' fill='#dff3f6'/><circle cx='918' cy='356' r='3' fill='#3b2a22'/><circle cx='942' cy='356' r='3' fill='#3b2a22'/><rect x='906' y='348' width='48' height='14' rx='6' fill='none' stroke='#0A2A4A' stroke-width='2.5'/>
+<g class='arm' style='transform-origin:930px 440px'><path d='M930 440L1000 470' stroke='#fff' stroke-width='26' stroke-linecap='round'/><circle cx='1006' cy='473' r='13' fill='#e8b894'/><path d='M1012 470L1050 448' stroke='#9fb8c4' stroke-width='5' stroke-linecap='round'/></g>
+<path d='M1330 470C1330 432 1440 432 1440 470L1450 625H1320Z' fill='#17c3c0'/><circle cx='1385' cy='385' r='36' fill='#8d5a3b'/><path d='M1349 378C1351 340 1419 340 1421 378C1405 364 1365 364 1349 378Z' fill='#1b1210'/><circle cx='1385' cy='340' r='14' fill='#1b1210'/><path d='M1353 392C1370 410 1400 410 1417 392L1417 408C1400 426 1370 426 1353 408Z' fill='#dff3f6'/><circle cx='1372' cy='382' r='3' fill='#1b1210'/><circle cx='1398' cy='382' r='3' fill='#1b1210'/>
+<g class='arm2' style='transform-origin:1340px 480px'><path d='M1340 480L1290 530' stroke='#17c3c0' stroke-width='24' stroke-linecap='round'/><circle cx='1284' cy='536' r='12' fill='#8d5a3b'/></g>
+<rect x='1180' y='520' width='90' height='10' rx='4' fill='#fff'/><rect x='1218' y='530' width='6' height='110' fill='#9fb8c4'/><rect x='1192' y='510' width='30' height='10' rx='3' fill='#9fb8c4'/><rect x='1230' y='506' width='26' height='14' rx='3' fill='#0FB5BA'/>
+<g class='lamp' style='transform-origin:1120px 0px'><rect x='1116' width='8' height='150' fill='#9fb8c4'/><path d='M1070 150H1170L1150 190H1090Z' fill='#fff' stroke='#cfe2ea'/><path d='M1090 190L1010 470H1230L1150 190Z' fill='#fff8dc' opacity='.28'/><ellipse cx='1120' cy='196' rx='60' ry='20' fill='url(#lg)'/></g>
+<g class='dust' fill='#fff'><circle cx='700' cy='560' r='3'/><circle cx='820' cy='600' r='2'/><circle cx='1000' cy='580' r='3'/><circle cx='1200' cy='620' r='2'/><circle cx='460' cy='620' r='2'/><circle cx='1500' cy='590' r='3'/></g></g></svg></div>
+<div class="wrap"><div class="tag" style="color:var(--gold)">Cosmetic Dentist · Queens, NY</div>
+<h1>Premium Cosmetic Dentistry, <em>Designed for Your Smile.</em></h1>
+<p>Odontología estética premium: carillas, blanqueamiento, implantes y coronas, con resultados naturales en Queens, Nueva York.</p>
+<div class="btns"><a class="btn" href="https://wa.me/19297574718?text=Hello%20American%20Dentistry%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn ghost" href="https://www.instagram.com/american_dentistry" target="_blank" rel="noopener">Instagram Profile</a></div></div>
+<div class="stage" style="display:none">
+<svg id="tooth" viewBox="0 0 400 400"><defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#d9ecf2"/></linearGradient></defs><path d="M120 90C150 70 190 85 200 95C210 85 250 70 280 90C320 115 315 190 295 250C285 295 280 340 258 340C238 340 235 290 200 290C165 290 162 340 142 340C120 340 115 295 105 250C85 190 80 115 120 90Z" fill="url(#tg)" stroke="#bfdbe5" stroke-width="4"/><path d="M135 110C150 100 170 105 180 115" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none" opacity=".9"/></svg>
+<svg id="tools" viewBox="0 0 400 400"><defs><radialGradient id="gl"><stop offset="0" stop-color="#1FA6A0" stop-opacity=".55"/><stop offset="1" stop-color="#1FA6A0" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="190" fill="url(#gl)"/><g><circle cx="90" cy="100" r="34" fill="#cfe9ee" stroke="#D4AF6A" stroke-width="5"/><path d="M112 126L170 200" stroke="#D4AF6A" stroke-width="8" stroke-linecap="round"/></g><path d="M315 70L255 165q-8 14 6 19" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/><g transform="translate(70 270)"><rect width="30" height="14" rx="5" fill="#D4AF6A"/><rect x="4" y="14" width="22" height="52" rx="6" fill="#cfd8dc"/><path d="M4 28h22M4 40h22M4 52h22" stroke="#607d8b" stroke-width="3"/></g><g transform="rotate(-35 320 300)"><rect x="262" y="294" width="112" height="12" rx="6" fill="#22b3ac"/><rect x="254" y="278" width="36" height="14" rx="3" fill="#fff"/></g></svg>
+</div>
+<div class="stage"><div class="bgglow"></div>
+<svg id="t2" viewBox="0 0 400 400" style="transform-origin:50% 45%"><defs><radialGradient id="en" cx=".4" cy=".25" r=".9"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#eef6f9"/><stop offset="1" stop-color="#c3dbe5"/></radialGradient><linearGradient id="rt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9e0cf"/><stop offset="1" stop-color="#c9bda3"/></linearGradient><filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity=".35"/></filter></defs><g filter="url(#sh)"><path d="M150 250C148 300 150 360 168 362C186 362 190 300 200 288C210 300 214 362 232 362C250 360 252 300 250 250Z" fill="url(#rt)"/><path d="M112 100C140 70 180 84 200 98C220 84 260 70 288 100C322 140 314 205 294 252C284 292 276 318 256 316C238 314 232 276 200 276C168 276 162 314 144 316C124 318 116 292 106 252C86 205 78 140 112 100Z" fill="url(#en)" stroke="#b7d2de" stroke-width="2"/></g><path d="M128 112C146 96 172 100 186 114" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M270 130C288 150 290 190 280 226" fill="none" stroke="#9ec3d3" stroke-width="6" stroke-linecap="round" opacity=".35"/><path d="M200 98V150" stroke="#b7d2de" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg>
+<svg id="tl2" viewBox="0 0 400 400" style="opacity:0"><defs><linearGradient id="mt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#9fb8c4"/></linearGradient></defs><circle id="rg2" class="tl" cx="200" cy="200" r="165" fill="none" stroke="#D9B15F" stroke-width="2" stroke-dasharray="3 12" opacity=".6"/>
+<g id="tm" class="tl"><circle cx="95" cy="105" r="36" fill="url(#mt)" stroke="#D9B15F" stroke-width="5"/><circle cx="85" cy="95" r="12" fill="#fff" opacity=".7"/><path d="M120 132L172 205" stroke="url(#mt)" stroke-width="9" stroke-linecap="round"/></g>
+<g id="tp" class="tl"><path d="M335 60L268 160Q256 180 272 188" fill="none" stroke="url(#mt)" stroke-width="7" stroke-linecap="round"/></g>
+<g id="ti" class="tl" transform="translate(70 250)"><rect x="0" y="0" width="32" height="16" rx="6" fill="#D9B15F"/><rect x="4" y="16" width="24" height="56" rx="7" fill="url(#mt)"/><path d="M4 30h24M4 42h24M4 54h24M4 66h24" stroke="#587887" stroke-width="3"/></g>
+<g id="tb" class="tl"><g transform="rotate(-35 320 300)"><rect x="262" y="294" width="112" height="13" rx="6" fill="#14c4b3"/><rect x="254" y="276" width="38" height="16" rx="3" fill="#fff"/><path d="M260 276v-8M268 276v-8M276 276v-8M284 276v-8" stroke="#fff" stroke-width="3"/></g></g>
+<path id="s1" class="tl" d="M200 40L206 56L222 62L206 68L200 84L194 68L178 62L194 56Z" fill="#D9B15F"/><path id="s2" class="tl" d="M350 190L355 202L367 207L355 212L350 224L345 212L333 207L345 202Z" fill="#fff"/><path id="s3" class="tl" d="M50 170L55 182L67 187L55 192L50 204L45 192L33 187L45 182Z" fill="#fff"/></svg>
+<div class="flash"></div></div>
+<div class="mid">Precision in every detail.</div>
+<div class="endcta"><a class="btn" href="https://wa.me/19297574718?text=Hello%20American%20Dentistry%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">Book Your Smile</a></div><div class="bar"></div><div class="hint">SCROLL ↓</div>
+</header></div>
+
+<section id="about"><div class="wrap rv"><div class="tag">About Us</div><h2>Smiles Built Around You.</h2>
+<p style="max-width:700px">American Dentistry is a cosmetic dental practice in Queens, NY, focused on natural-looking smile transformations. Hablamos español. Every plan is tailored to your features, goals and style.</p></div></section>
+
+<section id="services" class="alt"><div class="wrap"><div class="tag">What We Offer</div><h2>Our Services</h2>
+<div class="grid">
+<div class="card rv"><i>🦷</i><h3>Veneers · Carillas</h3><p>Custom shells that refine shape, colour and symmetry.</p></div>
+<div class="card rv"><i>✨</i><h3>Whitening · Blanqueamiento</h3><p>A brighter smile with professional whitening.</p></div>
+<div class="card rv"><i>🔩</i><h3>Dental Implants · Implantes</h3><p>Permanent, natural-looking tooth replacement.</p></div>
+<div class="card rv"><i>👑</i><h3>Crowns · Coronas</h3><p>Restore strength and appearance of damaged teeth.</p></div>
+</div></div></section>
+
+<section id="results"><div class="wrap"><div class="tag">Real Results</div><h2>Before &amp; After</h2>
+<p>Drag the slider, or watch it animate on its own.</p>
+<div class="grid" id="cases"></div></div></section>
+
+<section class="dk"><div class="wrap"><div class="tag" style="color:var(--gold)">Why Us</div><h2>A Personalised Experience</h2>
+<div class="grid">
+<div class="card rv"><h3>Natural Results</h3><p>Designs that complement your face.</p></div>
+<div class="card rv"><h3>Bilingual Care</h3><p>English y español.</p></div>
+<div class="card rv"><h3>Easy Booking</h3><p>Message us on WhatsApp anytime.</p></div>
+</div></div></section>
+
+<section id="contact" class="alt"><div class="wrap" style="max-width:640px"><div class="tag">Book a Consultation</div><h2>Request Your Visit</h2>
+<form id="f"><input id="n" placeholder="Full name" required><input id="p" placeholder="Phone number"><select id="s"><option>Veneers</option><option>Whitening</option><option>Implants</option><option>Crowns</option><option>Other</option></select><textarea id="m" rows="3" placeholder="Message"></textarea><button class="btn">Send via WhatsApp</button></form>
+<p>📍 Queens, NY · 📞 <a href="https://wa.me/19297574718" target="_blank" rel="noopener">+1 (929) 757-4718</a> · <a href="https://www.instagram.com/american_dentistry" target="_blank" rel="noopener">@american_dentistry</a></p></div></section>
+<section id="faq"><div class="wrap" style="max-width:760px"><div class="tag">Good to Know</div><h2>FAQs</h2>
+<details><summary>What is the difference between veneers and crowns?</summary><p>Veneers cover the front of a tooth for cosmetic change; crowns cover the whole tooth to restore strength and shape. We will recommend what suits you at your consultation.</p></details>
+<details><summary>How do I book a consultation?</summary><p>Tap the WhatsApp button or use the form below and we will reply to confirm your visit.</p></details>
+<details><summary>¿Hablan español?</summary><p>Sí, atendemos en inglés y en español.</p></details>
+<details><summary>Can I see examples of your work?</summary><p>Yes, see the before and after section here or follow @american_dentistry on Instagram.</p></details>
+</div></section>
+
+
+
+<footer><div class="wrap"><div class="fg">
+<div><h4>American Dentistry</h4><p>Premium cosmetic dentistry in Queens, NY: veneers, whitening, implants &amp; crowns.</p></div>
+<div><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#results">Before &amp; After</a></li><li><a href="#faq">FAQs</a></li></ul></div>
+<div><h4>Services</h4><ul><li><a href="#services">Veneers · Carillas</a></li><li><a href="#services">Whitening · Blanqueamiento</a></li><li><a href="#services">Dental Implants</a></li><li><a href="#services">Crowns · Coronas</a></li></ul></div>
+<div><h4>Contact</h4><ul><li><a href="https://wa.me/19297574718" target="_blank" rel="noopener">WhatsApp: +1 (929) 757-4718</a></li><li><a href="https://www.instagram.com/american_dentistry" target="_blank" rel="noopener">Instagram: @american_dentistry</a></li><li><a href="#contact">Queens, NY</a></li><li><a href="#contact">Book a Consultation</a></li></ul></div>
+</div><div class="copy">© 2026 American Dentistry, Queens NY. All Rights Reserved.</div></div></footer>
+<a class="wa" href="https://wa.me/19297574718" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script>
+// Add real photos: put image URLs/data URIs in before/after
+var cases=[{t:'Veneers',before:'',after:''},{t:'Whitening',before:'',after:''},{t:'Crowns',before:'',after:''}];
+var box=document.getElementById('cases');
+cases.forEach(function(c){
+var d=document.createElement('div');d.className='rv';
+d.innerHTML='<div class="ba"><div class="l b"></div><div class="l a"></div><span style="left:12px">Before</span><span style="right:12px">After</span><div class="h"></div></div><h3 style="margin-top:12px">'+c.t+'</h3>';
+var ba=d.querySelector('.ba'),b=ba.querySelector('.b'),a=ba.querySelector('.a'),h=ba.querySelector('.h'),user=false;
+if(c.before)b.style.backgroundImage='url('+c.before+')';
+if(c.after)a.style.backgroundImage='url('+c.after+')';
+function set(p){p=Math.max(0,Math.min(100,p));a.style.clipPath='inset(0 0 0 '+p+'%)';h.style.left=p+'%'}
+function move(x){var r=ba.getBoundingClientRect();set((x-r.left)/r.width*100)}
+ba.addEventListener('pointerdown',function(e){user=true;ba.setPointerCapture(e.pointerId);move(e.clientX)});
+ba.addEventListener('pointermove',function(e){if(e.buttons||e.pointerType==='touch')move(e.clientX)});
+var t=Math.random()*6;(function loop(){if(!user)set(50+45*Math.sin(t+=.015));requestAnimationFrame(loop)})();
+box.appendChild(d)});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+var cu=document.querySelector('.cur'),rg=document.querySelector('.ring'),mx=0,my=0,rx=0,ry=0;
+addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;cu.style.left=mx+'px';cu.style.top=my+'px'});
+(function f(){rx+=(mx-rx)*.15;ry+=(my-ry)*.15;rg.style.left=rx+'px';rg.style.top=ry+'px';requestAnimationFrame(f)})();
+document.querySelectorAll('a,button,summary,.ba').forEach(function(e){e.addEventListener('mouseenter',function(){rg.classList.add('big')});e.addEventListener('mouseleave',function(){rg.classList.remove('big')})});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+var t='Hello American Dentistry, I am '+n.value+'. Service: '+s.value+'. Phone: '+p.value+'. '+m.value;
+window.open('https://wa.me/19297574718?text='+encodeURIComponent(t),'_blank')});
+(function(){var tr=document.getElementById('home'),hero=tr.querySelector('.hero'),tooth=document.getElementById('tooth'),tools=document.getElementById('tools'),mid=tr.querySelector('.mid'),txt=hero.querySelector('.wrap'),hint=tr.querySelector('.hint'),v=hero.querySelector('video'),st=tr.querySelector('.stage'),has=v.dataset.scrub&&v.getAttribute('src');
+if(has){st.style.display='none';v.addEventListener('loadedmetadata',function(){v.pause();upd()})}
+function c(x){return Math.max(0,Math.min(1,x))}
+function upd(){var r=tr.getBoundingClientRect(),p=c(-r.top/(r.height-innerHeight));
+tooth.style.transform='scale('+(0.7+Math.pow(p,2.2)*20)+') rotate('+(p*-8)+'deg)';
+tooth.style.opacity=c(1-(p-.45)*3);
+tools.style.opacity=c((p-.4)/.3);tools.style.transform='scale('+(.6+c((p-.4)/.6)*.55)+')';
+mid.style.opacity=c((p-.7)/.2);
+txt.style.opacity=c(1-p*3.2);hint.style.opacity=c(1-p*6);
+hero.style.setProperty('--ov',c(1.1-p*1.3));
+if(has&&v.duration){v.pause();v.currentTime=p*v.duration}}
+addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd()})();
+(function(){var tr=document.getElementById('home'),st=tr.querySelectorAll('.stage')[1],v=tr.querySelector('video'),t=document.getElementById('t2'),tl=document.getElementById('tl2'),fl=tr.querySelector('.flash'),rg=document.getElementById('rg2'),bar=tr.querySelector('.bar'),cta=tr.querySelector('.endcta'),gl=tr.querySelector('.bgglow'),CL=tr.querySelector('.clinic');
+if(v.getAttribute('src')){st.style.display='none';CL.style.display='none';if(!v.dataset.scrub){tr.style.height='auto';tr.querySelector('.hero').style.position='relative';['.endcta','.bar','.mid','.hint'].forEach(function(q){tr.querySelector(q).style.display='none'})}return}
+function c(x){return Math.max(0,Math.min(1,x))}
+function ease(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}
+var T=[['tm',95,105,-40,0],['tp',300,110,40,.07],['ti',100,285,-30,.14],['tb',310,295,35,.21],['s1',200,62,0,.1],['s2',350,207,0,.18],['s3',50,187,0,.26]].map(function(a){return{e:document.getElementById(a[0]),x:a[1],y:a[2],r:a[3],d:a[4]}});
+var S=[];for(var i=0;i<28;i++){var s=document.createElement('i');s.className='sp';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';st.appendChild(s);S.push({e:s,v:.3+Math.random()*.9})}
+var tgt=0,cur=0;function sc(){var r=tr.getBoundingClientRect();tgt=c(-r.top/(r.height-innerHeight))}
+addEventListener('scroll',sc,{passive:true});sc();
+(function f(ts){cur+=(tgt-cur)*.09;var p=cur;
+t.style.transform='scale('+(.6+Math.pow(c(p/.62),2.3)*26)+') rotate('+(-p*7)+'deg)';
+t.style.opacity=Math.min(c(p*7),c(1-(p-.5)/.14));CL.style.opacity=c(1-p/.5);
+fl.style.opacity=Math.max(0,.85-Math.abs(p-.56)*9);
+gl.style.transform='scale('+(1+p*.6)+')';
+tl.style.opacity=c((p-.45)/.15);tl.style.transform='scale('+(.85+p*.3)+')';
+rg.style.transform='rotate('+(p*220)+'deg)';
+T.forEach(function(o,i){var e=ease(c((p-.5-o.d)/.28)),b=Math.sin(ts/700+i)*5*e;o.e.style.opacity=e;o.e.style.transform='translate('+(200-o.x)*(1-e)+'px,'+((200-o.y)*(1-e)+b)+'px) rotate('+o.r*(1-e)+'deg) scale('+(.3+.7*e)+')'});
+S.forEach(function(o){o.e.style.opacity=c((p-.3)/.2)*.8;o.e.style.transform='translateY('+(-p*o.v*400)+'px)'});
+bar.style.width=(p*100)+'%';cta.style.opacity=c((p-.86)/.08);cta.style.pointerEvents=p>.9?'auto':'none';
+requestAnimationFrame(f)})(0)})();
+(function(){var b=document.querySelector('.burger'),l=document.querySelector('nav .links');function tg(o){b.classList.toggle('open',o);l.classList.toggle('open',o);b.setAttribute('aria-expanded',o)}
+b.addEventListener('click',function(){tg(!l.classList.contains('open'))});
+l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){tg(false)})})})();
+</script>
+</body>
+</html>
